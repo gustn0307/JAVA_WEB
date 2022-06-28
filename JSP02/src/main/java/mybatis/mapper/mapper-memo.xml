@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="memoMapper">
+
+	<select id="findAll" resultType="domain.dto.memo.MemoDTO">
+		select * from memo order by no desc
+	</select>
+	
+	<insert id="create" >
+		insert into memo(no, content, writer, created_date)
+		values(seq_memo.nextval, #{content}, #{writer}, sysdate)
+	</insert>
+	
+	<select id="detail" resultType="domain.dto.memo.MemoDTO">
+		select no, content, writer, created_date from memo where no=#{no}
+	</select>
+	
+	<delete id="delete">
+		delete from memo where no=#{no}
+	</delete>
+</mapper>

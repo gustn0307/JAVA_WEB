@@ -1,0 +1,177 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap');
+*{margin: 0; padding: 0; box-sizing: border-box;}
+h1{position: absolute; top:-9999px}
+li{
+	list-style: none;
+}
+body{
+	font-family: 'Nanum Gothic Coding', monospace;
+}
+.flex{
+	display: flex;
+}
+.center{
+	justify-content: center;
+}
+.between{
+	justify-content: space-between;
+}
+
+.required{
+	color: red;
+}
+.color9{
+	color: #999;
+}
+.color-brand{
+	color: #5f0080;
+}
+main>.wrap{
+	width: 640px;
+	margin: 0 auto;
+	font-size: 14px;
+}
+#form>.wrap table{
+	width: 640px;
+	border-collapse:collapse; 
+}
+#form>.wrap table thead tr th{
+	padding: 50px 0 51px;
+	font-size: 28px;
+	width: 100%;
+	text-align: center;
+}
+
+#form>.wrap table thead tr td{
+	font-size: 12px;
+	text-align: right;
+	padding-bottom: 10px;
+	width: 100%;
+}
+
+#form>.wrap table tbody{
+	
+	border-top:2px solid #333; 
+	border-bottom:2px solid #333;
+}
+
+#form>.wrap table tbody tr{
+	padding: 19px 0 10px;
+	display: block;
+}
+#form>.wrap table tr th{
+	display: inline-block;
+	width: 159px;
+	font-weight: normal;
+	text-align: left;
+	padding-left: 20px;
+}
+#form>.wrap table tr td{
+	display: inline-block;
+}
+#form>.wrap table tbody tr td input:not([type=radio]){
+	width: 100%;
+	height: 44px;
+	padding: 0 14px;
+    border: 1px solid #ccc;
+}
+#form>.wrap table tbody tr td.birth div{
+	border: 1px solid #a9a9a9;
+}
+/* //생년월일 3개 */
+#form>.wrap table tbody tr td.birth input{
+	width: 88px;
+	height: 44px;
+	border: none;
+	text-align: center;
+}
+#form>.wrap table tbody tr td.birth span{
+	line-height: 44px;
+}
+
+#form>.wrap table tbody tr td:nth-of-type(1){
+	width: 332px;
+	padding: 0 1em;
+}
+#form>.wrap table tbody tr td:nth-of-type(2) button{
+	width: 120px;
+	height: 44px;
+	margin-left: 5px;
+}
+#form>.wrap table tbody tr td.addr button{
+	width: 100%;
+	height: 44px;
+	
+}
+#form>.wrap table tbody tr td.addr p{
+	font-size: 12px;
+	margin-top: 10px;
+}
+#form>.wrap table tbody tr td.gender span:not(:first-child){
+	margin-left: 67px;
+}
+
+
+/* //////////////////////////// */
+#terms .text {
+	padding: 22px 0 0 20px; 
+	width: 159px;
+}
+#terms .check-items{
+	width: 481px;
+	padding: 14px 18px; 
+}
+#terms .check-items li dl{
+	padding: 8px 0;
+}
+#terms .check-items li dl dd{
+	margin-left: 12px;
+	width: 100%;
+}
+#terms .check-items li dl dd .all-check{
+	font-size: 18px;
+	font-weight: 700;
+}
+#terms .check-items li dl dd .guide{
+	font-size: 12px;
+	letter-spacing: -1.5px;
+	font-weight: 400;
+	margin-top: 10px;
+}
+#terms .check-items li dl dd .guide.sms{
+	padding-left: 20px;
+	letter-spacing: 0;
+}
+.sms-email{
+	margin-top: 10px;
+}
+.check-email{
+	margin-left: 80px;
+}
+.btn-submit{
+	padding: 40px 0 60px;
+}
+.btn-style{
+	background-color: #5f0080;
+	border-radius : 3px;
+	color: #fff;
+	font-size: 16px;
+	border: none;
+}
+
+.btn2-style{
+	border: 1px solid #5f0080;
+    border-radius: 3px;
+    text-align: center;
+    color: #5f0080;
+    background-color: transparent;
+    font-weight: 700;
+}
+
+
+.btn-submit button{
+	width: 240px;
+	height: 56px;
+	font-weight: 700;
+}

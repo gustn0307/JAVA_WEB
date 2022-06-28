@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+*{padding: 0; margin: 0; box-sizing: border-box;}
+li{
+	list-style: none;
+}
+h1{
+	position: absolute;
+	left: -9999px;
+}
+
+.flex{
+	display: flex;
+}
+.end{
+	justify-content: flex-end;
+}
+.between{
+	justify-content: space-between;
+}
+
+.view-size{
+	width: 1180px;
+	margin: 0 auto;
+}
+
+header>.wrap{
+	height: 80px;
+	padding: 20px 0;
+	border-bottom: 1px solid #a9a9a9;
+}
+
+#user>.wrap ul li a{
+	padding: 0.5em 1em;
+	display: inline-block;
+}

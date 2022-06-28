@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="memberMapper">
+  <insert id="insert" >
+  	insert into TEST09(no, id, pw, name, email, addr, phone, gender, birth,
+  	ADD_ITEM,AGREE,PRIVATE1,PRIVATE2,MARKETING,SMS, MAILLING, FOURTEEN_CHK,CREATED_DATE)
+  	values(seq_t9.nextval, #{id}, #{pw}, #{name}, #{email}, #{addr}, #{phone}, #{gender}, #{birth},
+  	#{add_item}, #{agree}, #{private1}, #{private2}, #{marketing}, #{sms}, #{mailling}, #{fourteen_chk},
+  	systimestamp)
+  </insert>
+  
+  <select id="logCheck" resultType="domain.dto.LoginOK">
+  	select id, name, email from Test09 
+  	where id=#{id} and pw=#{pw} 
+  </select>
+  <select id="findById" resultType="domain.dto.MemberDetailDTO">
+  	select * from Test09 
+  	where id=#{id}
+  </select>
+  <update id="update">
+  	update Test09
+  	set pw=#{pw}
+  	where id=#{id}
+  </update>
+  <delete id="delete">
+  	delete from test09
+  	where id=#{id}
+  </delete>
+</mapper>

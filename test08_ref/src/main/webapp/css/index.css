@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+*{margin: 0; padding: 0; box-sizing: border-box;}
+h1{position: absolute; top:-9999px}
+
+.flex{
+	display: flex;
+}
+.center{
+	justify-content: center;
+}
+
+.required{
+	color: red;
+}
+main>.wrap{
+	width: 640px;
+	margin: 0 auto;
+	font-size: 14px;
+}
+#form>.wrap table{
+	width: 641px;
+	border-collapse:collapse; 
+}
+#form>.wrap table thead tr th{
+	padding: 50px 0 51px;
+	font-size: 28px;
+}
+
+#form>.wrap table thead tr td{
+	font-size: 12px;
+	text-align: right;
+	padding-bottom: 10px;
+}
+
+#form>.wrap table tbody{
+	
+	border-top:2px solid #333; 
+	border-bottom:2px solid #333;
+}
+
+#form>.wrap table tbody tr{
+	padding: 19px 0 10px;
+	display: block;
+}
+#form>.wrap table tbody tr th{
+	width: 159px;
+	font-weight: normal;
+	text-align: left;
+	padding-left: 20px;
+}
+#form>.wrap table tbody tr td input{
+	width: 100%;
+	height: 44px;
+}
+
+#form>.wrap table tbody tr td:nth-of-type(1){
+	width: 332px;
+	padding: 0 1em;
+}
+#form>.wrap table tbody tr td:nth-of-type(2) button{
+	width: 120px;
+	height: 44px;
+	margin-left: 5px;
+}
+/* //////////////////////////// */

@@ -1,0 +1,13 @@
+@charset "UTF-8";
+@import url("reset.css");
+
+header>.wrap{
+	height: 80px;
+	line-height: 80px;
+	border-bottom: 1px solid #a9a9a9;
+	margin-bottom: 40px; 
+}
+
+header>.wrap ul li a{
+	padding: 0.5em 1em;
+}

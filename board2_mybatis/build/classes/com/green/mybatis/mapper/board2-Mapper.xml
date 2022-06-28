@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="board2Mapper">
+	
+	<select id="findAll" resultType="com.green.domain.dto.Board2DTO">
+	
+		select no, subject, content, read_count, writer, created_date
+						from board2 where no>0 order by no desc
+	<!-- 
+		select * from
+			(select rownum rnum, b.* from
+				(select no, subject, content, read_count, writer, created_date
+						from board2 where no>0 order by no desc) b)
+		where rnum between 11 and 20
+		 -->
+	</select>
+	
+	<select id="detail" resultType="com.green.domain.dto.Board2DTO">
+		select no, subject, content, read_count, writer, created_date
+		from board2 where no=#{no}
+	</select>
+	
+	<insert id="save" >
+		insert into board2(no, subject,content,writer,created_date)
+		values(bo.nextval, #{subject}, #{content}, #{writer}, systimestamp)
+	</insert>
+	<update id="up">
+		update board2
+		set read_count = read_count + 1
+		where no=#{no}
+	</update>
+	<delete id="del">
+		delete from board2
+		where no=#{no}
+	</delete>
+	
+	<update id="update">
+		update board2
+		set subject=#{subject}, content=#{content}
+		where no=#{no}
+	</update>
+  
+</mapper>

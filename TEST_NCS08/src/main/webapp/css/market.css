@@ -1,0 +1,185 @@
+@charset "UTF-8";
+@import url("common.css");
+body{
+	letter-spacing: -.6px;
+	font-size: 14px;
+}
+header>.wrap{
+	height: 50px;
+	border-bottom: 1px solid #d5d9e2;
+	text-align: center;
+	
+}
+header>.wrap a{
+	height: 26px;
+	display: inline-block;
+}
+header>.wrap a span{
+	display: inline-block;
+	width: 310px;
+	height: 50px;
+	background-image: url("../images/마켓컬리.PNG");
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+}
+/* //////////////////// */
+
+main>.wrap{
+	width: 640px;
+	margin: 0 auto;
+	padding: 60px 0;
+}
+main>.wrap .tit p{
+	color: #535768;
+	font-size: 28px;
+	font-weight: 700;
+	text-align: center;
+	margin:50px;
+}
+main>.wrap .must{
+    padding-bottom: 10px;
+    font-size: 12px;
+    text-align: right;
+}
+main>.wrap .star{
+	color:#ff0000;
+}
+main>.wrap .purple{
+	width:120px;
+	height:44px;
+	padding:10px;
+	margin:10px;
+	color:#8000ff;
+	font-family:noto sans;
+}
+main>.wrap th{
+	width: 159px;
+    padding: 20px 0 0 20px;
+    font-weight: 700;
+    font-size: 14px;
+    color: #333;
+    line-height: 20px;
+    vertical-align: top;
+    text-align: left;
+}
+main>.wrap td{
+	padding: 10px 0;
+    border-top: 0;
+    font-size: 14px;
+    vertical-align: top;
+    text-align: left;
+}
+main>.wrap .join_form .id_form{
+	display:flex;
+}
+main>.wrap .join_form .caution{
+	font-size:12px;
+	padding:10px;
+	color:#800040;
+}
+main>.wrap .join_form p{
+	font-size:12px;
+}
+main>.wrap .join_form input{
+	width:332px;
+	height:44px;
+	flex:1; 
+	padding:10px;
+	margin: 10px;
+}
+main>.wrap .addr_form .purple{
+	width:332px;
+	height:44px;
+	padding:10px;
+	margin:0 10px;
+}
+
+main>.wrap .join_form{
+	display:inline;
+}
+main>.wrap .join_form label{
+	display: inline-block;
+    padding: 10px 52px 10px 0;
+    vertical-align: top;
+    font-size: 16px;
+    line-height: 22px;
+    text-align:center;
+}
+
+main>.wrap .join_form label .radio{
+	width:24px;
+	height:24px;
+}
+main>.wrap .check_form label{
+    padding: 10px;
+    font-size: 16px;
+    line-height: 24px;
+    text-align:left;
+}
+main>.wrap .check_form .check{
+	width:20px;
+	height:20px;
+}
+main>.wrap .check_form .mini{
+	font-size:8px;
+	margin-left:40px;
+}
+main>.wrap tfoot .submit_form{
+	text-align:center;
+	padding-top:20px;
+}
+main>.wrap .submit_btn{
+	width: 120px;
+	height:44px;
+	padding: 10px;
+	font-size: 18px;
+	color:#8000ff;
+}
+footer>.wrap{
+	width: 880px;
+	margin: 0 auto;
+}
+#copy>.wrap{
+	color: #888;
+	font-size: 12px;
+}
+#copy>.wrap .info div dl{
+	display: flex;	
+	margin-right: 0.5em;
+}
+#copy>.wrap .info div dl dt{
+	margin-right: 0.5em;
+	color: #666;
+}
+
+#copy>.wrap .footer-logo{
+	margin-top: 25px;
+}
+#copy>.wrap .footer-logo .f-logo{
+	display: block;
+	width: 47px;
+	height: 25px;
+	background: url("../images/footer-logo-nc.svg");
+	background-repeat: no-repeat;
+}
+
+#copy>.wrap .footer-logo .sword{
+	display: block;
+	width: 25px;
+	height: 25px;
+	background: url("../images/ncdinos-black.png");
+	background-repeat: no-repeat;
+}
+
+#copy>.wrap .footer-logo span{
+	margin: 0 16px;
+	display: block;
+	height: 15px;
+	margin-top: 5px;
+	border-left: 1px solid #a9a9a9;
+}
+
+.line{
+	line-height: 1.5;
+}

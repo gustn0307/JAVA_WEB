@@ -1,0 +1,31 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap');
+@import url("reset.css");
+.flex{display: flex}
+.column{flex-direction: column;}
+.row{flex-direction: row;}
+.center{justify-content: center;}
+.between{justify-content: space-between;}
+.around{justify-content: space-around;}
+
+body{
+	font-family: 'Nanum Gothic Coding', monospace;
+}
+
+.style_box{
+	background: #fff;
+    border: 1px solid #c6cfd8;
+    color: #535768;
+    padding: 0 15px;
+    font-size: 15px;
+    height: 56px;
+}
+.style_btn{
+	background-color: #004c98;
+	color: #fff;
+	border: none;
+	cursor: pointer;
+	height: 56px;
+	font-size: 16px;
+	font-weight: 700;
+}
